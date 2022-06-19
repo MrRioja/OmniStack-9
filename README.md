@@ -1,5 +1,3 @@
-# OmniStack-9
-
 <p align="center">
   <img src="./frontend/src/assets/logo.svg" alt="Logo" width="300"/>
   <br>
@@ -20,7 +18,7 @@ Spots a um clique de distância.
 
 <p align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#tindev">Tindev</a> •
+  <a href="#aircnc">Aircnc</a> •
   <a href="#instalação">Instalação</a> •
   <a href="#tecnologias">Tecnologias</a> •
   <a href="#autor">Autor</a>  
@@ -31,10 +29,10 @@ Spots a um clique de distância.
 ## Sobre
 
 <p>
-  Projeto desenvolvido durante a <strong>Semana OmniStack 8</strong>, evento criado pela <strong><a href="https://rocketseat.com.br/">Rocketseat</a></strong>.   
+  Projeto desenvolvido durante a <strong>Semana OmniStack 9</strong>, evento criado pela <strong><a href="https://rocketseat.com.br/">Rocketseat</a></strong>.   
   Um evento 100% online e GRATUITO, com conteúdo exclusivo e INÉDITO.
 
-Ocorreu do dia 05 ao dia 11 de Agosto de 2019 e teve como intuito mostrar na prática o poder da stack
+Ocorreu do dia 30 de Setembro ao dia 06 de Outubro de 2019 e teve como intuito mostrar na prática o poder da stack
 <strong><a href="https://nodejs.org/pt-br/">NodeJS</a></strong> +
 <strong><a href="https://pt-br.reactjs.org/">ReactJS</a></strong> +
 <strong><a href="https://reactnative.dev">React Native</a></strong> e como essas tecnologias podem te levar até os seus maiores objetivos como programador.
@@ -47,7 +45,7 @@ Ocorreu do dia 05 ao dia 11 de Agosto de 2019 e teve como intuito mostrar na pr�
 
 <br><br><br>
 
-## Tindev
+## Aircnc
 
 <p>
   O Tindev tem como objetivo unir programadores com interesses em comum para, quem sabe, construir projetos juntos ou até mesmo trocar experiências sobre esse mundo louco da programação...😅
