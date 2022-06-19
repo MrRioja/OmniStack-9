@@ -1,11 +1,11 @@
 # OmniStack-9
 
 <p align="center">
-  <img src="./readme/logo.svg" alt="Logo" width="300"/>
+  <img src="./frontend/src/assets/logo.svg" alt="Logo" width="300"/>
   <br>
 </p>
 <h3 align="center">
-Uma espécie de "Tinder" para os Devs.
+Spots a um clique de distância.
 </h3>
 
 <br><br>
