@@ -47,45 +47,6 @@ Ocorreu do dia 30 de Setembro ao dia 06 de Outubro de 2019 e teve como intuito m
 
 ## Aircnc
 
-<p>
-  O Tindev tem como objetivo unir programadores com interesses em comum para, quem sabe, construir projetos juntos ou até mesmo trocar experiências sobre esse mundo louco da programação...😅
-
-A aplicação funciona como um Tinder, onde a pessoa se loga com o usuário do
-<strong>
-<a href="https://github.com/">Github</a>
-</strong>
-através dessa tela:
-
-<br>
-<img src="./readme/Login.png" alt="Login"/>
-<br><br>
-
-E logo após é direcionada para a tela principal onde estarão os cards dos outros usuários cadastrados na plataforma, conforme imagem abaixo:
-
-<br>
-<img src="./readme/Lista.png" alt="Lista"/>
-<br><br>
-
-Os cards contêm o nome e descrição dos Devs cadastrados, além dos botões de <strong>DISLIKE</strong> e <strong>LIKE</strong>.
-Quando o Dev logado dá um like em um usuário da lista que deu like nele num outro momento, acontece o que é chamado de <strong>MATCH</strong>.
-
-Esse evento é sinalizado para ambos os usuários em tempo real, utilizando Websocket. Assim que ocorre o match é apresentado na tela do usuário a seguinte tela:
-
-<br>
-<img src="./readme/Match.png" alt="Match"/>
-<br><br>
-
-Aqui temos uma demostração do evento de match desde o início. O usuário da esquerda da um like no usuário da direita, que momentos depois dá um like do Dev que curtiu o perfil dele e pronto...
-
-<br><br>
-
-<p align="center" ><img height="100" src="./readme/itsamatch.png" alt="It's a match" /></p>
-<br><br>
-
-<img src="./readme/Match.gif" alt="GIF Match"/>
-
-</p>
-
 <br><br><br>
 
 ## Instalação
