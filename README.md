@@ -52,8 +52,16 @@ Ocorreu do dia 30 de Setembro ao dia 06 de Outubro de 2019 e teve como intuito m
 ## Instalação
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Docker](https://www.docker.com/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+
+### Criando container do mongoDB localmente
+
+O comando abaixo irá baixar a imagem docker do mongo e criar um container com as configurações e senhas abaixo. Caso queira executar o mongo de outra maneira basta alterar a string de conexão presente no arquivo [server](./backend/src/server.js).
+
+```bash
+docker container run --name omnistack9 -e MONGO_INITDB_ROOT_USERNAME=omnistack9 -e MONGO_INITDB_ROOT_PASSWORD=admin -p 27017:27017 -d -v "mongoVolume:/data/db" mongo
+```
 
 ### 🎲 Rodando o Back End (servidor)
 
@@ -77,7 +85,7 @@ $ npm run dev
 # Caso prefira usar o Yarn execute o comando abaixo
 $ yarn dev
 
-# O servidor inciará na porta 3333 ou na porta definida no arquivo .env na variavel APP_PORT - acesse <http://localhost:3333>
+# O servidor inciará na porta 3333 ou na porta definida no arquivo .env na variável APP_PORT - acesse <http://localhost:3333>
 ```
 
 ### 🖥️ Rodando o Front End (Web)
@@ -137,7 +145,6 @@ $ expo start
 <img align="left" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="75" />
 
 <br><br><br><br><br><br>
-
 
 ## Autor
 
