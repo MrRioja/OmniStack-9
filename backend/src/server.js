@@ -1,40 +1,40 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const path = require('path');
+const dotenv = require("dotenv/config");
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const path = require("path");
 
-const socketio = require('socket.io');
-const http = require('http');
+const socketio = require("socket.io");
+const http = require("http");
 
-const routes = require('./routes');
+const routes = require("./routes");
 
 const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://omnistack9:omnistack9@omnistack-3thla.mongodb.net/semana09?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect("mongodb://omnistack9:admin@localhost");
 
 const connectedUsers = {};
 
-io.on('connection', socket => {
-    const { user_id } = socket.handshake.query;
+io.on("connection", (socket) => {
+  const { user_id } = socket.handshake.query;
 
-    connectedUsers[user_id] = socket.id;
+  connectedUsers[user_id] = socket.id;
 });
 
 app.use((req, res, next) => {
-    req.io = io;
-    req.connectedUsers = connectedUsers;
+  req.io = io;
+  req.connectedUsers = connectedUsers;
 
-    return next();
-})
+  return next();
+});
 
 app.use(cors());
 app.use(express.json());
-app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
+app.use("/files", express.static(path.resolve(__dirname, "..", "uploads")));
 app.use(routes);
 
-server.listen(3333);
+server.listen(process.env.APP_PORT, () => {
+  console.log(`Server is running 🚀 on port ${process.env.APP_PORT}`);
+});
