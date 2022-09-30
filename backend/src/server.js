@@ -13,6 +13,8 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
+io.origins(["http://localhost:3000"]);
+
 mongoose.connect("mongodb://omnistack9:admin@localhost");
 
 const connectedUsers = {};
