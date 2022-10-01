@@ -68,10 +68,11 @@ function SpotList({ tech, navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 30,
+    marginTop: 15,
+    marginBottom: 15,
   },
 
-  tittle: {
+  title: {
     fontSize: 20,
     color: "#444",
     paddingHorizontal: 20,
