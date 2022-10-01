@@ -83,11 +83,11 @@ Abaixo um exemplo de alerta de solicitação de reserva na tela de dashboard. Pe
 
 A aplicação móvel tem como finalidade servir de ponte entre os spots disponíveis e os usuários que buscam spots para diárias. Ao se cadastrar na aplicação, o usuário informa seu email como forma de identificação e as tecnologias com que trabalha, dando a possibilidade para ele alocar um spot em uma empresa que utiliza a mesma stack dele para fortalecer o networking e a troca de conhecimento.
 
-<img src="./readme/Mobile Login Screen.png" width="600"  />
+<img src="./readme/Mobile Login Screen.png" width="250"  />
 
 Após o cadastro, o usuário irá para a tela de dashboard onde os spots serão exibidos separados por tecnologia, conforme imagem abaixo:
 
-<img src="./readme/Mobile Dashboard.png" width="600"  />
+<img src="./readme/Mobile Dashboard.png" width="250"  />
 
 Com o spot escolhido, basta o usuário clicar no botão de reserva e escolher a data que deseja visita-lo. Ao concluir o agendamento o dono do spot será alertado em tempo real que determinado usuário deseja alugar o spot na data preenchida pelo usuário. Seguem as telas desse fluxo:
 
