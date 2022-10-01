@@ -1,7 +1,8 @@
 <p align="center">
   <img src="./frontend/src/assets/logo.svg" alt="Logo" width="300"/>
-  <br>
+  <br/>
 </p>
+
 <h3 align="center">
 Spots a um clique de distância.
 </h3>
@@ -39,15 +40,68 @@ Ocorreu do dia 30 de Setembro ao dia 06 de Outubro de 2019 e teve como intuito m
 
 </p>
 
-<br><br>
+<br/><br/>
 
 <img src="./readme/Wallpaper.png" alt="Logo" style="border-radius: 20px"/>
 
-<br><br><br>
+<br/><br/><br/>
 
 ## Aircnc
 
-<br><br><br>
+A aplicação AirCnC tem como objetivo servir de vitrine para empresas que querem disponibilizar spots para profissionais realizarem seus trabalhos no local. Sendo uma especie de co-working, o aplicativo possui dois modos de acesso: aplicação web e mobile, cada qual com sua responsabilidade e funcionalidades especificas as quais serão descritas abaixo:
+
+### AirCnC - Aplicação web
+
+A responsabilidade da aplicação web do AirCnC é o cadastro dos spots. É uma página web disponibilizada para que as empresas criem seu cadastro e realize o cadastro dos spots que desejam disponibilizar para seus futuros visitantes.
+
+O fluxo é bem simples, primeiro o responsável pela empresa realiza o login na aplicação com seu email através da página abaixo:
+
+![Página de login - Web](./readme/Web%20Login%20Screen.png)
+
+Após o login o usuário é direcionado para a página dashboard que exibirá os spots já cadastrados e a opção de cadastro de novos spots, conforme tela abaixo:
+
+![Dashboard AirCnC - Web](./readme/Web%20Dashboard.png)
+
+Como vemos na tela acima, além dos spots já cadastrados, temos um botão para realizar novos cadastros. O cadastro de spot é bem simples e os únicos dados necessários são:
+
+- Imagem do spot.
+- Nome da empresa.
+- Tecnologias utilizadas pela empresa.
+- Valor da diária do spot.
+
+Abaixo um exemplo de cadastro de um spot:
+
+![Página de cadastro de Spot AirCnC - Web](./readme/Web%20Spot's%20Form.png)
+
+Com os spots disponibilizados para os demais usuários, basta aguardar que ocorra um agendamento e pronto, teremos a opção de aceitar ou rejeitar a solicitação de reserva que ocorre em tempo real com a comunicação entre mobile e web realizada através de websocket.
+
+Abaixo um exemplo de alerta de solicitação de reserva na tela de dashboard. Pelo mobile, quando há a solicitação de reserva, o dono do spot é comunicado em tempo real (caso esteja com sessão ativa) sobre quem, quando e qual spot está sendo requisitado, conforme imagem abaixo:
+
+![Alerta de solicitação de agendamento AirCnC - Web](./readme/Web%20Booking%20Alert.png)
+
+### AirCnC - Aplicação mobile
+
+A aplicação móvel tem como finalidade servir de ponte entre os spots disponíveis e os usuários que buscam spots para diárias. Ao se cadastrar na aplicação, o usuário informa seu email como forma de identificação e as tecnologias com que trabalha, dando a possibilidade para ele alocar um spot em uma empresa que utiliza a mesma stack dele para fortalecer o networking e a troca de conhecimento.
+
+<img src="./readme/Mobile Login Screen.png" width="600"  />
+
+Após o cadastro, o usuário irá para a tela de dashboard onde os spots serão exibidos separados por tecnologia, conforme imagem abaixo:
+
+<img src="./readme/Mobile Dashboard.png" width="600"  />
+
+Com o spot escolhido, basta o usuário clicar no botão de reserva e escolher a data que deseja visita-lo. Ao concluir o agendamento o dono do spot será alertado em tempo real que determinado usuário deseja alugar o spot na data preenchida pelo usuário. Seguem as telas desse fluxo:
+
+|                    Formulário de agendamento                    |                  Confirmação de agendamento                   |
+| :-------------------------------------------------------------: | :-----------------------------------------------------------: |
+| <img src="./readme/Mobile Appointment Form.png" width="50%"  /> | <img src="./readme/Mobile Booking Finish.png" width="50%"  /> |
+
+Após a solicitação ser enviada, ficará pendente a resposta do dono do spot. Quando a reserva for aceita ou rejeitada, o usuário que a solicitou será notificado com as informações da reserva e seu status, vide imagens a seguir:
+
+|                         Reserva aceita                          |                        Reserva rejeitada                        |
+| :-------------------------------------------------------------: | :-------------------------------------------------------------: |
+| <img src="./readme/Mobile Booking Approved.png" width="50%"  /> | <img src="./readme/Mobile Booking Rejected.png" width="50%"  /> |
+
+<br/><br/>
 
 ## Instalação
 
@@ -175,6 +229,6 @@ $ expo start
 <img alt="Skype" src="https://img.shields.io/badge/SKYPE-%2300AFF0.svg?style=for-the-badge&logo=Skype&logoColor=white"/>
 </a>
 
-<br/>
-<br/>
+<br/><br/>
+
 </div>
